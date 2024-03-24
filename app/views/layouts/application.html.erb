@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Application Title</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <!-- Include stylesheet(s) -->
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <!-- Include JavaScript(s) -->
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <!-- Your navigation menu -->
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <!-- Add more menu items as needed -->
+    </ul>
+  </nav>
+
+  <!-- Main content area -->
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Your footer content -->
+  </footer>
+</body>
+</html>
