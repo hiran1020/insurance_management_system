@@ -25,15 +25,7 @@ class User < ApplicationRecord
   
   validates :contact_number, presence: true
   validates :email, presence: true, uniqueness: { message: "has already been taken" }
-  validate :unique_email
-
-  private
-
-  def unique_email
-    if User.exists?(email: email)
-      errors.add(:email, "has already been taken")
-    end
-  end
+  
 
 end 
 
