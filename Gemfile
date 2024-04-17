@@ -53,3 +53,8 @@ gem 'graphiql-rails', group: :development
 gem "propshaft", "~> 0.8.0"
 gem 'rack-cors', require: 'rack/cors'
 
+
+gem 'carrierwave'
+
+gem 'solargraph'
+
